@@ -100,7 +100,7 @@ public class TemplateManager {
 
 			List<Template> templateList = getTemplates();
 
-			String templateId = optionService.findValueByKey(Option.KEY_TEMPLATE_ID);
+			String templateId = optionService.findValue(Option.KEY_TEMPLATE_ID);
 			if (StringUtils.isNotBlank(templateId)) {
 				for (Template tpl : templateList) {
 					if (templateId.equals(tpl.getId())) {
